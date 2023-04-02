@@ -1,0 +1,22 @@
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev:Cassio da Costa Silva
+DATA 20/03/2023
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jogo de Memória - Animais da Selva</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="game">
+	</div>
+	<div id="timer">Tempo restante: <span id="time">60</span> segundos</div>
+	<div id="result" class="hidden">
+		<div id="message"></div>
+		<button id="restart">Jogar novamente</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
