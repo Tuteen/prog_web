@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>We Do - Serviços de Destiny 2</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="textos.html">Textos</a></li>
+				<li><a href="formulario.html">Formulário</a></li>
+				<li><a href="tabelas.html">Tabelas</a></li>
+				<li><a href="imagens.html">Imagens</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<h1>We Do - Serviços de Destiny 2</h1>
+
+	<h2>Conheça nossos serviços:</h2>
+	<ul>
+		<li>Trials of Osiris</li>
+		<li>Raid</li>
+		<li>Glory Ranks</li>
+		<li>Nightfall</li>
+	</ul>
+
+	<table>
+		<tr>
+			<th>Serviço</th>
+			<th>Preço</th>
+			<th>Tempo de Entrega</th>
+		</tr>
+		<tr>
+			<td>Trials of Osiris</td>
+			<td>$10</td>
+			<td>1-2 horas</td>
+		</tr>
+		<tr>
+			<td>Raid</td>
+			<td>$20</td>
+			<td>3-4 horas</td>
+		</tr>
+		<tr>
+			<td>Glory Ranks</td>
+			<td>$5 por rank</td>
+			<td>1-2 horas por rank</td>
+		</tr>
+		<tr>
+			<td>Nightfall</td>
+			<td>$15</td>
+			<td>2-3 horas</td>
+		</tr>
+	</table>
+
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4sTuxpoFA0rWxOi2tzcNFalL1YSfDEXeLQA&usqp=CAU" alt="Destiny 2" width="300">
+
+	<form>
+		<label for="search">Procure por um serviço:</label>
+		<input type="text" id="search" name="search">
+		<button type="submit">Pesquisar</button>
+	</form>
+
+</body>
+</html>
