@@ -1,0 +1,118 @@
+//Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Cassio da Costa Silva 
+DATA 20/03/2023
+// Array com as imagens dos animais
+const animals = [
+	'crocodile',
+	'elephant',
+	'giraffe',
+	'hippopotamus',
+	'leopard',
+	'lion',
+	'rhinoceros',
+	'tiger',
+	'zebra',
+	'monkey',
+	'parrot',
+	'snake'
+];
+
+// Função para embaralhar as cartas
+function shuffleCards(array) {
+	let currentIndex = array.length;
+	let temporaryValue, randomIndex;
+
+	// Enquanto ainda houver elementos para embaralhar
+	while (currentIndex !== 0) {
+
+		// Seleciona um elemento aleatório
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex--;
+
+		// Troca o elemento atual com o elemento selecionado aleatoriamente
+		temporaryValue = array[currentIndex];
+		array[currentIndex] = array[randomIndex];
+		array[randomIndex] = temporaryValue;
+	}
+
+	return array;
+}
+
+// Função para gerar as cartas
+function generateCards() {
+	const game = document.getElementById('game');
+	const shuffledAnimals = shuffleCards([...animals, ...animals]);
+
+	// Cria uma carta para cada animal embaralhado
+	shuffledAnimals.forEach((animal, index) => {
+		const card = document.createElement('div');
+		card.classList.add('card', 'hidden');
+		card.dataset.animal = animal;
+		card.dataset.index = index;
+		card.style.backgroundImage = `url('images/${animal}.jpg')`;
+		game.appendChild(card);
+
+		// Adiciona o evento de clique na carta
+		card.addEventListener('click', flipCard);
+	});
+}
+
+// Variáveis globais
+let hasFlippedCard = false;
+let lockBoard = false;
+let firstCard, secondCard;
+let matches = 0;
+let timeLeft = 60;
+let timer;
+
+// Função para virar a carta clicada
+function flipCard() {
+	// Se o tabuleiro estiver bloqueado ou a carta já estiver virada, retorna
+	if (lockBoard || this === firstCard || this.classList.contains('matched')) return;
+
+	// Adiciona a classe flip para virar a carta
+	this.classList.add('flip');
+
+	// Se esta é a primeira carta a ser virada, guarda como a primeira carta virada
+	if (!hasFlippedCard) {
+		hasFlippedCard = true;
+		firstCard = this;
+		return;
+	}
+
+	// Se esta é a segunda carta a ser virada, guarda como a segunda carta virada e verifica se há uma correspondência
+	secondCard = this;
+	checkForMatch();
+}
+
+// Função para verificar se as cartas viradas correspondem
+function checkForMatch() {
+	// Verifica se as duas cartas correspondem
+	if (firstCard.dataset.animal === secondCard.dataset.animal) {
+		disableCards();
+	} else {
+		unflipCards();
+	}
+}
+
+// Função para desabilitar as cartas correspondentes
+function disableCards() {
+	firstCard.classList.add('matched');
+	secondCard.classList.add('matched');
+
+	// Reinicia as variáveis de controle das cartas viradas
+	resetBoard();
+
+	// Incrementa o contador de correspondências
+	matches++;
+
+	// Verifica se o jogador venceu o jogo
+	if (matches === animals.length) {
+		stopTimer();
+		showResult('Você venceu!');
+	}
+}
+
+// Função para desvirar as cartas não correspondentes
+function unflip
