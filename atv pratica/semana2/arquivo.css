@@ -1,0 +1,81 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Estilos dos links */
+a {
+  color: #003366;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos das listas */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos dos formulários */
+form {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #002255;
+}
