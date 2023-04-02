@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabelas - We Do</title>
+</head>
+<body>
+	<h1>Tabelas</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Serviço</th>
+				<th>Preço</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Trials of Osiris</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td>Raid</td>
+				<td>$50</td>
+			</tr>
+			<tr>
+				<td>Glory Ranks</td>
+				<td>$30</td>
+			</tr>
+			<tr>
+				<td>Nightfall</td>
+				<td>$25</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Detalhes do Serviço</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Serviço</td>
+				<td>Trials of Osiris</td>
+			</tr>
+			<tr>
+				<td>Duração</td>
+				<td>1 hora</td>
+			</tr>
+			<tr>
+				<td>Número de Jogadores</td>
+				<td>3</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Preço</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>John</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td>Mike</td>
+				<td>$50</td>
+			</tr>
+			<tr>
+				<td>Sarah</td>
+				<td>$30</td>
+			</tr>
+			<tr>
+				<td>Jessica</td>
+				<td>$25</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
