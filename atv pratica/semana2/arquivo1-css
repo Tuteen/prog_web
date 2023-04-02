@@ -1,0 +1,26 @@
+<!-- Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Cassio da Costa Silva
+DATA 19/03/2023 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>We Do - Serviços Destiny 2</title>
+  <link rel="stylesheet" type="text/css" href="arquivo.css">
+</head>
+<body>
+	<h1>We Do - Serviços Destiny 2</h1>
+
+	<h2>Serviços oferecidos</h2>
+	<ul>
+		<li>Trials of Osiris</li>
+		<li>Raid</li>
+		<li>Glory Ranks</li>
+		<li>Nightfall</li>
+	</ul>
+
+	<p>Para mais informações, entre em contato conosco.</p>
+
+	<a href="formulario.html">Solicite um serviço</a>
+</body>
+</html>
