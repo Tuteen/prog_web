@@ -1,0 +1,29 @@
+GET /api/jogadores - Recupera a lista de jogadores.
+GET /api/jogadores/{id_jogador} - Recupera informações de um jogador específico pelo ID.
+POST /api/jogadores - Insere um novo jogador.
+PUT /api/jogadores/{id_jogador} - Atualiza informações de um jogador específico pelo ID.
+DELETE /api/jogadores/{id_jogador} - Exclui informações de um jogador específico pelo ID.
+
+GET /api/servicos - Recupera a lista de serviços disponíveis.
+GET /api/servicos/{id_servico} - Recupera informações de um serviço específico pelo ID.
+POST /api/servicos - Insere um novo serviço.
+PUT /api/servicos/{id_servico} - Atualiza informações de um serviço específico pelo ID.
+DELETE /api/servicos/{id_servico} - Exclui informações de um serviço específico pelo ID.
+
+GET /api/contas - Recupera a lista de contas dos jogadores.
+GET /api/contas/{id_conta} - Recupera informações de uma conta específica pelo ID.
+POST /api/contas - Insere uma nova conta.
+PUT /api/contas/{id_conta} - Atualiza informações de uma conta específica pelo ID.
+DELETE /api/contas/{id_conta} - Exclui informações de uma conta específica pelo ID.
+
+GET /api/conquistas - Recupera a lista de conquistas disponíveis.
+GET /api/conquistas/{id_conquista} - Recupera informações de uma conquista específica pelo ID.
+POST /api/conquistas - Insere uma nova conquista.
+PUT /api/conquistas/{id_conquista} - Atualiza informações de uma conquista específica pelo ID.
+DELETE /api/conquistas/{id_conquista} - Exclui informações de uma conquista específica pelo ID.
+
+GET /api/transacoes - Recupera a lista de transações realizadas.
+GET /api/transacoes/{id_transacao} - Recupera informações de uma transação específica pelo ID.
+POST /api/transacoes - Insere uma nova transação.
+PUT /api/transacoes/{id_transacao} - Atualiza informações de uma transação específica pelo ID.
+DELETE /api/transacoes/{id_transacao} - Exclui informações de uma transação específica pelo ID.
